@@ -39,3 +39,15 @@ reviews = pd.read_csv(
 print("\nExercise 4 - Wine Reviews CSV:")
 print(f"Total rows: {len(reviews)}")
 print(reviews.head())
+
+# ---- EXERCISE 5 ----
+# Save DataFrame to CSV file
+animals = pd.DataFrame({
+    'Cows': [12, 20],
+    'Goats': [22, 19]
+}, index=['Year 1', 'Year 2'])
+
+animals.to_csv("cows_and_goats.csv")
+print("\nExercise 5 - Saved to CSV!")
+print("File: cows_and_goats.csv ✓")
+
