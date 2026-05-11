@@ -19,3 +19,13 @@ fruit_sales = pd.DataFrame({
 }, index=["2017 Sales", "2018 Sales"])
 print("\nExercise 2 - Fruit Sales:")
 print(fruit_sales)
+
+# ---- EXERCISE 3 ----
+# Create ingredients Series
+ingredients = pd.Series(
+    ["4 cups", "1 cup", "2 large", "1 can"],
+    index=["Flour", "Milk", "Eggs", "Spam"],
+    name="Dinner"
+)
+print("\nExercise 3 - Ingredients Series:")
+print(ingredients)
