@@ -29,3 +29,13 @@ ingredients = pd.Series(
 )
 print("\nExercise 3 - Ingredients Series:")
 print(ingredients)
+
+# ---- EXERCISE 4 ----
+# Read CSV file into DataFrame
+reviews = pd.read_csv(
+    "../input/wine-reviews/winemag-data_first150k.csv",
+    index_col=0
+)
+print("\nExercise 4 - Wine Reviews CSV:")
+print(f"Total rows: {len(reviews)}")
+print(reviews.head())
